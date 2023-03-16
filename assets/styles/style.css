@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    animation: menu-fade 2s ease-in-out;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    background-color: #29333f;
+}
+
+.logo {
+    animation: heart-beat 3s ease-in-out;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.navigation-menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation-menu__item {
+    margin: 0;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navigation-menu__item a {
+    position: relative;
+}
+
+.navigation-menu__item a:after {
+    transition: all .5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+.navigation-menu__item a:hover:after {
+    width: 100%;
+}
+
+.conference {
+    height: 1000px;
+    background-image: url("../img/heart.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* @keyframes menu-fade {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+} */
+
+@keyframes heart-beat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
