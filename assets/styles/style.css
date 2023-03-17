@@ -4,14 +4,53 @@
     padding: 0;
 }
 
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.orange {
+    display: block;
+    color: rgba(226, 64, 64, 1);
+    padding: 10px 0;
+}
+
 /* body {
     animation: menu-fade 2s ease-in-out;
 } */
+
+/* @keyframes menu-fade {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+} */
+
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+}
+
+/* HEADER */
 
 .header {
     background-color: #29333f;
@@ -19,11 +58,6 @@ a {
 
 .logo {
     animation: heart-beat 3s ease-in-out;
-}
-
-.container {
-    max-width: 80%;
-    margin: 0 auto;
 }
 
 .navigation-menu {
@@ -65,7 +99,7 @@ a {
 }
 
 .conference {
-    height: 1000px;
+    height: 800px;
     background-image: url("../img/heart.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,16 +107,6 @@ a {
     background-position: center;
 }
 
-/* @keyframes menu-fade {
-    0% {
-      opacity: 0;
-      visibility: hidden;
-    }
-    100% {
-      opacity: 1;
-      visibility: visible;
-    }
-} */
 
 @keyframes heart-beat {
     0% {
@@ -94,4 +118,37 @@ a {
     100% {
       transform: scale(1);
     }
-  }
+}
+
+/* HEADER */
+
+/* CONFERENCE */
+
+.conference .content {
+    /* padding: 30px 0; */
+    width: 60%;
+}
+
+/* .conference .row {
+    display: flex;
+} */
+
+.conference__name {
+    color: #fff;
+    font-family: 'Comfortaa', sans-serif; 
+    line-height: 1.2em; 
+    padding: 30px 0;
+}
+
+.conference__info_place, .conference__info_stream {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif; 
+    font-size: 20px;
+    /* line-height: 1.2em; 
+    padding: 30px 0; */
+}
+
+.map {
+    display: none;
+}
+/* CONFERENCE */
