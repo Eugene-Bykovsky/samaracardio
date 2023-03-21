@@ -1,3 +1,8 @@
+<?php
+    if ($_SERVER['REQUEST_URI'] == '/index.php/istoriya') {
+        header('Location: https://history.samaracardio.ru/index.php/istoriyaru');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
