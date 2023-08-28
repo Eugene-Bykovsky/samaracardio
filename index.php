@@ -152,7 +152,7 @@
     <script>
         window.addEventListener('load', function() {
             document.getElementById('buttonMap').addEventListener("click", function(){
-            if (document.getElementById('map').style.display === "none") {
+            if (document.getElementById('map').style.display === "none" || document.getElementById('map').style.display === "") {
                 document.getElementById('map').style.display = "block";
             } else {
                 document.getElementById('map').style.display = "none";
